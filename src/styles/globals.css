@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "modam";
+    src: url("../fonts/ModamFaNum-Medium.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "modam";
+    src: url("../fonts/ModamFaNum-Bold.ttf");
+    font-weight: 600;
+}
+*{
+    font-family: modam, serif;
+}
+
+
+@media screen and (max-width: 640px) {
+    .hidden-in-mobile {
+       display: none !important;
+    }
+    .hidden-in-desktop {
+        display: flex !important;
+    }
+}
+@media screen and (min-width: 639px) {
+    .hidden-in-mobile {
+        display: flex !important;
+    }
+    .hidden-in-desktop {
+        display: none !important;
+    }
+}
+nav{
+    background-color: #0A0027 !important;
+}
+.bg-banner{
+    background-image: url("../../public/bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.login input{
+    color: white !important;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+}
+.login input::placeholder{
+    letter-spacing: 0;
+}
+.login .relative {
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+
+}
+.login .relative:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
