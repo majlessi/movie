@@ -73,7 +73,7 @@ export default function Home() {
         },
     })
     return (
-        <main className="dark  flex min-h-screen flex-col items-center justify-between p-24">
+        <main className="dark  flex min-h-screen flex-col items-center justify-between p-4 sm:p-24">
             <motion.div
                          variants={container}
                          initial="hidden"
