@@ -18,7 +18,7 @@ export const MovieCard = (item) => {
                       isBlurred
                       width={240}
                       src={item.img}
-                      alt="NextUI Album Cover"
+                      alt="NextUI Album Covesr"
                       classNames="m-5"
                   />
               </CardBody>
